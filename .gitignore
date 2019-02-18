@@ -43,4 +43,4 @@ testem.log
 Thumbs.db
 
 #pug
-/src/app/*.html
+src/app/*.html
