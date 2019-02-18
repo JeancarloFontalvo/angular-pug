@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+            "file_exclude_patterns":
+            [
+                "*.js",
+                "*.js.map",
+                "app/*.html"
+            ],
+            "folder_exclude_patterns":
+            [
+                "node_modules"
+            ],
+            "path": "."
+        }
+        
+	]
+}

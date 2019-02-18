@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+$bgPrimary: #42c5f4;
+
+.container-fluid {
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.full-center {
+    margin-left : auto !important;
+    margin-right: auto !important;
+}
+
+.background-panel {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    min-height: 300px;
+    display: block;
+
+    background-color: $bgPrimary;
+}
+
+.text-primary {
+    color: lighten($bgPrimary,20%);
+}
+
+.card {
+    border-color: lighten($bgPrimary, 20%);
+    box-shadow: 0px 0px 20px transparentize(darken($bgPrimary, 20%), .5);
+}
