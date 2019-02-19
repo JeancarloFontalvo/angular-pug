@@ -1,14 +1,20 @@
 - 
  var data = {
-     a: "Madre mia",
+     a: "Madre Wow",
      b: "Pero que cojones!"
+ }
+ var attributes = {
+    "class": "hello",
+    "(click)" : "alert('hello world')"
  }
 
 .background-panel
 .container-fluid
     .row
         .col-md-8.full-center
-            .card
+            .card&attributes(attributes)
                 .card-body
                     h3.card-title.text-primary  #{data.a} {{title}}, #{data.b}
-                    .card-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vel quia doloribus quo, velit obcaecati ex nulla voluptate nemo, tempore aut atque? Quo laboriosam similique veritatis debitis molestias, assumenda nulla.
+                    .card-text.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste vel quia doloribus quo, velit obcaecati ex nulla voluptate nemo, tempore aut atque? Quo laboriosam similique veritatis debitis molestias, assumenda nulla.
+                        !{JSON.stringify(attributes).replace("{", "").replace("}", "")}

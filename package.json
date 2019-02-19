@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "server" : "ng serve --host 192.168.0.17",
+    "server": "ng serve --host 192.168.0.17",
     "start": "npm run pug-it:w & npm run server",
     "build": "ng build",
     "test": "ng test",
@@ -12,7 +12,7 @@
     "postinstall": "node ./ng-add-pug-loader.js",
     "killPort": "fuser -k 4200/tcp",
     "pug-it": "pug src",
-    "pug-it:w":"pug src -P -w"
+    "pug-it:w": "pug src -P -w"
   },
   "private": true,
   "dependencies": {
